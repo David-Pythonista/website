@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/cv_style.css" rel="stylesheet">
+    <link rel="icon" tpye="image/png" href="static/img/page_icons/cv.png">
+    <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
+    <title>Curriculum vitae</title>
+</head>
+<body>
+    <div class="container">
+        <sidebar>
+            <img src="/static/img/CV/Self_portrait_BW.jpg" alt="Self_portrait">
+            <h2> EDUCATION </h2> 
+            <div class="education">
+                <h3> Széchenyi István University </h3>
+                <p> Institute of Informatics, Electrical and Mechanical Engineering <br>
+                    Electrical engineering, MSc – Automation systems specialization <br>
+                    2015 - 2017
+                </p>
+                <h3> Széchenyi István University </h3>
+                <p> Faculty of Engineering Sciences <br>
+                    Electrical engineering, BSc – Automation specialization <br>
+                    2010 - 2014
+                </p>
+            </div>
+            <h2> PERSONAL INFORMATION </h2>  
+            <div class="personal">
+                <h4 class="address">Address</h4>
+                <p> Csorna, Hungary</p>
+                <h4 class="date">Date of birth and place:</h4>
+                <p> july 1991 / Csorna, Hungary </p>
+                <h4 class="phone">Phone</h4>
+                <p> Please contact me on the "contact" option.</p>
+                <h4 class="email">Email</h4>
+                <p> Please contact me on the "contact" option. </p>
+                <h4 class="linkedin">Linkedin</h4>
+                <p> <a href="https://www.linkedin.com/in/d%C3%A1vid-moln%C3%A1r-50a2aa16a/">https://www.linkedin.com/in/david-molnar-50a2aa16a/ </a></p>
+                <h4 class="github">Github</h4> 
+                <p> <a href="https://github.com/David-Pythonista/Python-projects/branches"> https://github.com/David-Pythonista/Python-projects </a> </p>
+                <h4 class="website">Website</h4>         
+                <p> That's great! You are on the webiste! <a style="color: #fecb00" class="home" href="{% url 'home' %}" >Back to homepage.</a> </p>
+            </div>
+        </sidebar>
+    
+        {% comment %} Sidebar-end {% endcomment %}
+
+        <main> 
+            <h1>DAVID MOLNAR</h1>
+            <h2> ABOUT ME </h2>
+            <div class="intro">
+                <p> In my freetime I enjoy to do some soports like running, climing (via ferrata) strengthening 
+                    exercises or dancing. Beside this, culture is attracte me too, in form of book reading and 
+                    playing on guitar. To live out creativity I take pictures in different topics like landscapes,
+                    still life, nature and portrait. Programming is one of my favourite pastime activites, that
+                    is the reason I would like to turn this passion into profession.
+                </p>
+            </div>
+            <h2> WORK EXPERIENCE </h2>
+            <table>
+                <tr>
+                    <td> <p class="date_1">Current <br> 2022 August </p></td>
+                    <td> 
+                        <h3> SK on Hungary kft. </h3>
+                        <h4>Position: Engineer Leader / Location: Komárom, Hungary</h4>
+                        <p class="job_description">Supervision of production lines. Engineering team management, coordination, system development. 
+                            Preparing the factory for automotive requirements (IATF, VDA). Handle customer compliments.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <p class="date_2"> 2022 July <br> 2020 March </p> </td>
+                    <td> 
+                        <h4>Position: Process engineer / Location: Komárom, Hungary</h4>
+                        <p>Battery cell production for electric cars. My main job is, to analyze the production data, 
+                            to find the root cause of the different kind of issues, physical and functional errors of 
+                            batteries. Make preventive actions to avoid the defects, increase process capability, to 
+                            improve the process. Production planning, control and organization of people.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <p class="date_3">2020 February <br> 2017 October </p> </td>
+                    <td> 
+                        <h3> VESCON Automation GmbH. </h3>
+                        <h4>Position: Robot Programmer / Location: Győr, Hungary - Ingolstadt, Germany</h4>
+                        <p>Working in car-body production. Take part in commissioning of production lines.
+                            Online and offline industrial robot programming. (Fanuc, Kuka). 
+                            Teach and test the robot programs (trajectory), prepare the bus-configuration, 
+                            input/output communication, calibration of robots. Applications: riveting, welding, 
+                            clinching, gluing, pick and place. Make the documentation.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <h2> CERTIFICATIONS </h2>
+                <ul>
+                    <li> - JSE-40-01 / JavaScript Certified Entry-Level Programmer </li>
+                    <li> - CPE-20-01 / C++ Certified Entry-Level Programmer </li>
+                    <li> - PCAP-31-03 / Certified Associate in Python Programming </li>
+                    <li> - Excellent graded Masters’s Degree of Electrical Engineer </li>
+                    <li> - Excellent graded Bachelor’s Degree of Electrical Engineer </li>
+                    <li> - General certificate of education </li>
+                </ul>
+            <h2> LANGUAGES </h2>
+                <ul>
+                    <li> English - intermediate (B2) combined language exam </li>
+                    <li> German - intermediate (B2) combined language exam </li>
+                </ul>
+            <h2> SOFTWARE SKILLS </h2>
+                <div class="software">
+                    <table>
+                        <tr>
+                            <th>
+                                <label for="Python">Python</label> <br>
+                                <progress id="Python" value="50" max="100"></progress>
+                            </th>
+                            <th>
+                                <label for="C, C++">C, C++</label> <br>
+                                <progress id="C, C++" value="17" max="100"></progress>
+                            </th>
+                            <th>
+                                <label for="JavaScript">JavaScript</label> <br>
+                                <progress id="JavaScript" value="17" max="100"></progress>
+                            </th>
+                            </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>
+                                <label for="HTML, CSS">HTML, CSS</label> <br>
+                                <progress id="HTML, CSS" value="25" max="100"></progress>
+                            </th>
+                            <th>
+                                <label for="Django">Django</label> <br>
+                                <progress id="Django" value="17" max="100"></progress>
+                            </th>
+                            <th>
+                                <label for="Microsoft World and Excel">Microsoft World and Excel</label> <br>
+                                <progress id="Microsoft World and Excel" value="70" max="100"></progress>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            <h2> OTHERS </h2>
+                <ul>
+                    <li> - In 2022 October I joined a project as a junior software engineer. 
+                        In my part-time job, I focused on webdevelopement, use html and css code, Django 
+                        framework and Wagtail CMS. </li>
+                    <li> - Driving license, category: B </li>
+                </ul>
+            <h5> June, 2023 </h5>    
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* Overall page settings */
+
+body {
+    background-color: rgb(70, 64, 56); 
+    font-family: Myriad Pro;
+}
+ 
+.container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, fr);
+    grid-template-areas: 
+    "sidebar main";
+}
+
+/* Sidebar */
+
+img {
+    max-width: 100%; 
+}
+
+sidebar {
+    background-color: #202026;
+    max-width: 400px;
+    color: white;
+}
+
+sidebar h2{
+    font-weight: normal;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin-top: 4.5rem;
+    margin-left: 3rem;
+    border-bottom: 3px solid  #fecb00;
+}
+
+sidebar h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-left: 4rem;
+    margin-bottom: 0rem;
+}
+
+sidebar h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    vertical-align: middle;
+    margin: 0rem;
+    padding: 0.25rem 0rem 0rem 4.8rem;
+    background: linear-gradient(
+    to right,
+    #fecb00 0%,
+    #fecb00 18%,
+    #292a30 18%,
+    #292a30 100%);
+}
+
+.job_description {
+    margin-bottom: 0.3rem;
+}
+
+.address:before {
+    content:url('/static/img/CV/Location_icon.png');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -3.05rem;
+    padding-right: 2rem;
+}
+
+sidebar .date:before {
+    content:url('/static/img/CV/Birthday_icon.png');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -3.05rem;
+    padding-right: 2rem;
+}
+
+.phone:before {
+    content:url('/static/img/CV/Phone_icon.png');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -3.05rem;
+    padding-right: 2rem;
+}
+
+.email:before {
+    content:url('/static/img/CV/Mail_icon.png');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -3.05rem;
+    padding-right: 2rem;
+}
+
+.linkedin:before {
+    content:url('/static/img/CV/Linkedin_icon.png');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -3.05rem;
+    padding-right: 2rem;
+}
+
+.github:before {
+    content:url('/static/img/CV/Github_icon.png');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -3.05rem;
+    padding-right: 2rem;
+}
+
+.website:before {
+    content:url('/static/img/CV/Web_icon.png');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -3.05rem;
+    padding-right: 2rem;
+}
+
+.home {
+    color: #fecb00;
+}
+
+sidebar .education p {
+    margin-left: 4rem;
+    line-height: 1.6rem;
+}
+
+sidebar .personal p {
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Main */
+
+main {
+    background-color: white;
+    text-align: justify;
+    max-width: 700px;
+}
+
+main h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.8rem;
+    font-weight: normal; 
+    color: #2d2d2d;
+    background-color: #fecb00;
+    padding: 3rem 0rem 3rem 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    border-bottom: 3px solid  #737373;
+    margin-left: 3rem;
+}
+
+main .intro {
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+main h3 {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    margin-left: 2rem;
+    margin-bottom: -1rem;
+}
+
+main h4 {
+    font-weight: normal;
+    margin: 1.5rem 0rem 0rem 2rem;
+}
+
+main table tr td p {
+    margin: 1rem 3rem 1.5rem 2rem;
+}
+
+main table tr td {
+    min-width: 9rem;
+}
+
+main .date_1 {
+    font-size: 18px;
+    margin: -65px 0px 0px 60px;
+    /* margin: -3.5rem 0rem 0rem 3.5rem; */
+}
+
+main .date_2 {
+    font-size: 18px;
+    margin: -65px 0px 0px 60px;
+}
+
+main .date_3 {
+    font-size: 18px;
+    margin: -85px 0px 0px 60px;
+}
+
+main ul {
+    list-style-type: none;
+    line-height: 1.5rem;
+    margin: 0rem 3rem 0rem 9rem;
+}
+
+main .software{
+    margin-left: 11.5rem;
+}
+
+main progress {
+    -webkit-appearance: none;
+    width: 8rem;
+    height: 0.3rem;
+    margin-right: 0.8rem;
+    accent-color: #cccccc;
+}
+
+main progress::-webkit-progress-value { 
+    background: #2d2d2d; 
+}
+
+main label {
+    font-weight: normal;
+    margin-bottom: 0.1rem;
+}
+
+main h5 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-left: 30rem;
+}
+
+
+body {
+    animation-duration: 4s;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

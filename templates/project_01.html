@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/project_style.css" rel="stylesheet">
+    <script src="static/js/fade_in.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" tpye="image/png" href="static/img/page_icons/coding.png">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/myriad-pro">
+    <title>Searcher</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Searcher</h1>
+            <hr/>
+            <div class:"description">
+                <h2> Description of program: </h2> 
+                <p>Choose a sample pattern (txt file) and a target file (txt file). 
+                    The program will count how many times occure the sample pattern in the target file. 
+                </p>  
+            </div>
+        </header>    
+        <main>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> In the first line, we have to import every necessary item. 
+                            The Tkinter objects to create the interface of the program, 
+                            the filedialog which ensure the communication between the 
+                            operating system and our application. Beside buttons, we 
+                            need input field (Entry) and tkinter variable to store 
+                            data.
+                        <p> The init function creates the interface, stores the result
+                            in the self.output variable, and put it int the entry field. 
+                            In this case the program use it, to show result for the user. 
+                            Also create the lists, to store the data what was given. </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project01/01.png" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> This section contains the function behind the push buttons. 
+                            Load the sample and target file. Both of them are tested by the 
+                            „tester” function, are they empty or not. Empty files are not 
+                            accepted. </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project01/02.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> Length of sample counts how many character have 
+                            the sample file. This data will be used when the 
+                            program try to find the sample pattern in the target 
+                            file. </p>
+                        <p> The start function will run the whole process. 
+                            It does not accept empty files!. </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project01/03.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> Match finder will go through the lists which were 
+                            made in the init section, and contain the given data.</p> 
+                        <p> If the application find a character what is mathes with the 
+                            first character of the sample, stop goes through the file, 
+                            and check the next elements (checked elements number is the 
+                            same as the length of sample, that’s why calculated before).</p>
+                        <p>It will counts the full matches and write it in the entry field.</p>
+                    </div>
+                    <div class="code"><img src="static/img/Project01/04.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> This is the last - main - part of the program that will run the application. The "if"
+                            condition means that, if the program run directly then it will works, otherwiswe not.
+                        </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project01/05.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> The interface of the program. With the "Load sample button" 
+                            the user can open a window to select a pattern what must
+                            be found int the target file, which could be scrolled with 
+                            "Load target file" button.</p>
+                    </div>
+                    <div class="code"><img src="static/img/Project01/interface.png" alt="interface"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> Here is the pattern that should be found by the application. The 
+                            characters must be follow each other like in the picture. 
+                            The empty space in the second and third row's first column means that, 
+                            there could be any character.</p>
+                    </div>
+                    <div class="code"><img src="static/img/Project01/pattern.png" alt="pattern"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> The program will count how many times the pattern (sample) occurs in the target file.
+                            There are four times the searched charachter chain (one is fake).
+                            This is how the target file looks like: </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project01/target.png" alt="pattern"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> On the right is the result. In the "input" or "entry" field, the program
+                            write how many times found the pattern in the target file. </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project01/result.png" alt="pattern"></div>
+                </div>
+            </div>
+            <div class="back">
+                <button class="button" onclick="window.location.href='{% url 'home' %}';"> Home</button>
+            </div>
+            <footer>
+                <h3>End of description.</h3>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

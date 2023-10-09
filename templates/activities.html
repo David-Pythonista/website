@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/activities_style.css" rel="stylesheet">
+    <script src="static/js/fade_in.js"> </script>
+    <link rel="icon" tpye="image/png" href="static/img/page_icons/hobby.png">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/myriad-pro">
+    <title>Activities</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Free time activities</h1>
+            <nav class="main_menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="#Photography">Photography</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#Hiking">Hiking</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#Dance">Dance</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#Music">Music</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#Reading">Reading</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                </ul> 
+            </nav>
+        </header>    
+        <main>
+            <div class="container right">
+                <div id="Photography">
+                    <div class="photography">
+                        <div class="text">
+                            <a class="topic" > Photography</a>
+                            <p> Of all forms of imaging, photography is the most closely 
+                                related to reality. In the case of photographs, the 
+                                authenticity comes from the technique itself, because the 
+                                photograph is created by the rays reflected from the object. 
+                                It has an important role in preserving and shaping individual
+                                and community memory. The photograph highlights, accentuates
+                                and attracts attention. The events of our individual lives
+                                and the history of society live more vividly in us and can
+                                be recalled more easily if a photograph has been taken of them.
+                                The photograph is suitable for recording reality, showing 
+                                its manipulative distorted form, and can be art.
+                                [History and photography - Ilona Stemlerné Balog].   
+                                I take pictures on different subjects, such as nature 
+                                photos, landscapes, object photos, mood pictures or
+                                portraits.</p>
+                            </div>
+                        <div class="photography"><img src="static/img/activities/photo_set.png" alt="photo_set"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container left">
+                <div id="Hiking">
+                    <div class="hiking">
+                        <div class="via_ferrata"><img src="static/img/activities/via_ferrata.png" alt="via_ferrata"></div>
+                        <div class="text">
+                            <a class="topic">Hiking</a>
+                            <p> Via ferrata is a special kind of climbing. In this case,
+                                there is a trail system that leads along the path.
+                                It helps to handle difficult parts of the climbing and give
+                                a safe oppurtinity to do this sport.
+                                I climbed in the surrounding countries, like Austria and Slovenia,
+                                routes for via ferrata, as well as in Hungary. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="container right">
+                <div id="Dance">
+                    <div class="dance">
+                        <div class="text">
+                            <a class="topic" id="Dance"> Dance</a>
+                            <p> I started to learn Bachata a couple of years ago. After accomplishing a few
+                                dancing courses, I still stayed in the dancing school to practice more. Beside
+                                Bachata I learned Salsa too, in different variations.</p>
+                            </div>
+                        <div class="dance"><img src="static/img/activities/dance.png" alt="dance"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container left">
+                <div id="Music">
+                    <div class="music">
+                        <div class="guitar"><img src="static/img/activities/guitar.png" alt="guitar"></div> 
+                        <div class="text">  
+                            <a class="topic" id="Music"> Music</a>
+                            <p> In my free time, sometimes I play my acoustic guitar. It's not just require
+                                high attention and concentrating to play fluently, and this way improve those
+                                skills, but also a relaxing activity to do.</p>
+                        </div>
+                    </div>
+                </div>      
+            </div> 
+            <div class="container right">
+                <div id="Reading">
+                    <div class="dance">
+                        <div class="text">
+                            <a class="topic" id="Reading"> Reading</a>
+                            <p> Books can tell you a meaningfull and deep story. Discover new worlds and destiny.
+                                French romantic and russian realism: world literature masterpieces. 
+                                Literature is one of my free time activities.</p>
+                            </div>
+                        <div class="dance"><img src="static/img/activities/book.png" alt="book"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

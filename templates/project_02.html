@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/project_style.css" rel="stylesheet">
+    <script src="static/js/fade_in.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" tpye="image/png" href="static/img/page_icons/coding.png">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/myriad-pro">
+    <title>QR code detector</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QR code detector</h1>
+            <hr/>
+            <div class:"description">
+                <h2> Description of program: </h2> 
+                <p>Select an input image with one or more QR code(s) and the program will find them. 
+                </p>  
+            </div>
+        </header>    
+        <main>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> First section is responsible for importing the modules needed for the project. 
+                            The cv2 is an image processing library with useful image handling properties.
+                            Tkinter is for making the GUI, and PIL is for handling and converting the 
+                            different formats of images.  In this case, we have to use the square root 
+                            function from the math module <br>
+                            The init method will create the user interface, with a blank canvas, and
+                            two control buttons.</p>
+                    </div>
+                    <div class="code"><img src="static/img/Project02/01.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> When the user clicks on the start button, it will call the main functions 
+                            of the program. In the first step, determine all contours on the input 
+                            image, and if there are any QR codes, draw their contours. The last 
+                            function will display it.</p>
+                    </div>
+                    <div class="code"><img src="static/img/Project02/02.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> The load button provides the opportunity to choose an image file for 
+                            processing. It is not just making the connection between the operating 
+                            system, also collects the contours of the image. 
+                            After this call the show_image function.</p>
+                    </div>
+                    <div class="code"><img src="static/img/Project02/03.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> It converts the image to make it possible to insert and display it on the canvas 
+                            what is created by the init function. For this purpose, use resize and interpolation.
+                        </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project02/04.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> Calculate the area of the given shape, which is referred to as the number of the contour.
+                            Calculate the interval between two given points and return it.
+                        </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project02/05.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> The list_of_finding_patterns function will determine the contours 
+                            that are QR codes. The finding patterns (the black rectangles in the three corners) 
+                            have a specific size ratio. To use this, it can decide if the contour belongs to a 
+                            QR code finding pattern or not. These rectangles are used to find the 2D matrixes, 
+                            they have a specified distance from each other. That's why we need to determine_area 
+                            and, in the next section, the distance function. 
+                        </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project02/06.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> The "draw_the_QR_code", will check the coordinates and find the real QR codes in the image.
+                            It has to use three loops to go through the lists of coordinates.
+                        </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project02/07.jpg" alt="some_code"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p>Here is the application when it is running. In this case, the canvas is empty, 
+                            there is no loaded image on the screen.</p>
+                    </div>
+                    <div class="code"><img src="static/img/Project02/interface.jpg" alt="interface"></div>
+                </div>
+            </div>
+            <div class="container reveal">
+                <div class="section">
+                    <div class="explanation">
+                        <p> The loaded image after processing. The QR codes "finding pattern" marked with
+                            colorized dots and connected with lines.
+                        </p>
+                    </div>
+                    <div class="code"><img src="static/img/Project02/result.jpg" alt="result"></div>
+                </div>
+            <div class="back">
+                <button class="button" onclick="window.location.href='{% url 'home' %}';"> Home</button>
+            </div>
+            <footer>
+                <h3>End of description.</h3>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

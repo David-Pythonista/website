@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+
+body {
+  background-color: rgb(70, 64, 56);
+  font-family: roboto;/*'Source Code Pro', monospace; */
+  animation-duration: 4s;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.container {
+  background-color:  rgb(70, 64, 56);
+  display: grid;
+  align-items: center;
+  max-width: 1350px;
+  width: 100%;
+  margin: 0rem auto;
+  grid-template-columns: repeat(2, fr);
+  grid-template-areas: 
+  "col1 col2"; 
+}
+
+header {
+  background-image: url("/static/img/Activities/header.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  grid-column: span 2;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 15rem;  
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+main p {
+  flex-direction: column;
+  font-size: 18px;
+  color: white;
+}
+
+.main_menu {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+} 
+
+.main_menu ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.main_menu li {
+  font-size: 1rem;
+  text-decoration: none;
+  float: left;
+  padding: 10px 10px 575px 10px;
+  border-radius: 40px; 
+}
+
+.main_menu li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 7px 10px;
+  border-radius: 10px;
+}
+
+.main_menu li a:hover {
+  color: #ffffff;
+  background-color: #2b2278;
+  background-color: rgb(70, 64, 56);
+}
+
+main img {
+  max-width: 400px;
+}
+
+#Photography, #Hiking, #Dance, #Music {
+  margin-bottom: 70px;
+}
+
+.topic {
+  font-size: 2rem;
+  color: white;
+}
+
+.photography, .dance{
+  display: grid;
+  grid-template-columns: 840px 430px;
+  text-align: justify;
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 25px;
+}
+
+.hiking, .music {
+  display: grid;
+  grid-template-columns: 430px 840px;
+  text-align: justify;
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 25px;
+}
+
+main p {
+  margin-top: 12px;
+}
+
+.right {
+  position: relative;
+  transform: translateX(200px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.right.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.left {
+  position: relative;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.left.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dance {
+  margin-bottom: 3rem;
+}

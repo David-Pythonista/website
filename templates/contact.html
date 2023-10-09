@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/contact_style.css" rel="stylesheet">
+    <link rel="icon" tpye="image/png" href="static/img/page_icons/email.png">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/myriad-pro">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Contact me</h1>
+                <p>
+                    Keep in touch! If you have any questions, 
+                    some offers on different topics, or simply 
+                    have any intention to chat with me, send a 
+                    message via this page. I appreciate it!
+                </p>
+            <hr/>
+        </header>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Send message" class="button" href="#popup1" />
+            <button class="button" onclick="window.location.href='{% url 'home' %}';"> Home</button>
+        </form>
+    </div> 
+</body>
+</html>

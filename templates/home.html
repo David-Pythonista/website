@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/home_style.css" rel="stylesheet">
+    <link rel="icon" tpye="image/png" href="static/img/page_icons/home.png">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <sidebar>
+            <h2>Website made with:</h2>
+            <div class="symbols">
+                <img src="static/img/main_page/python.png" alt="python">
+                <img src="static/img/main_page/django.png" alt="django">
+                <img src="static/img/main_page/html.png" alt="html">
+                <img src="static/img/main_page/css.png" alt="css">
+                <img src="static/img/main_page/JavaScript.png" alt="javascript">
+            </div>
+        </sidebar>
+        <main>
+            <div class="cards">
+                <div class="card card-one">
+                    <h2 class="card-title">CV</h2>
+                    <a href="{% url 'cv' %}"><span></span></a>
+                    <p class="project-num">Curriculum vitae</p>
+                    <p class="date"></p>
+                    <p class="description">Here you can take a look on my professional curriculum vitae.</p>
+                </div>
+                <div class="card card-two">
+                    <h2 class="card-title">Activities</h2>
+                    <a href="{% url 'activities' %}"><span></span></a>
+                    <p class="project-num">Pass time</p>
+                    <p class="date"></p>
+                    <p class="description">Activities option show a quick exposition about my free time activities. </p>
+                </div>
+                <div class="card card-three">
+                    <h2 class="card-title">Flickr page</h2>
+                    <a href="https://www.flickr.com/photos/mdavidphotos/"><span></span></a>
+                    <p class="project-num">Photo portfolio</p>
+                    <p class="date"></p>
+                    <p class="description">Here you can find all of my photosets. Take a short look on that.</p>
+                </div>
+                <div class="card card-four">
+                    <h2 class="card-title">Contact</h2>
+                    <a href="{% url 'contact' %}"><span></span></a>
+                    <p class="project-num">Connection</p>
+                    <p class="date"></p>
+                    <p class="description">If you would like to contact with me, you can do that via the this section.</p>
+                </div>
+                <div class="card card-five">
+                    <h2 class="card-title">Searcher</h2>
+                    <a href="{% url 'project_01' %}"><span></span></a>
+                    <p class="project-num">Project number: #01</p>
+                    <p class="date">June 11, 2023</p>
+                    <p class="description">It counts how many times occur the pattern, in the target file. </p>
+                </div>
+                <div class="card card-six">
+                    <h2 class="card-title">QR code detector</h2>
+                    <a href="{% url 'project_02' %}"><span></span></a>
+                    <p class="project-num">Project number: #02</p>
+                    <p class="date">June 29, 2023</p>
+                    <p class="description">Can find QR codes in an image.</p>
+                </div>
+                <div class="card card-seven">
+                    <h2 class="card-title">Trading bot</h2>
+                    <a href=""><span></span></a>
+                    <p class="project-num">Project number: #03</p>
+                    <p class="date">Coming soon!</p>
+                    <p class="description">This project is in progress. Come back later.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

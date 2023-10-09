@@ -1,0 +1,112 @@
+body {
+  background-color:  rgb(70, 64, 56);
+  background-image: url("/static/img/main_page/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.95;
+  font-family: 'Ubuntu Mono', monospace;
+  animation-duration: 4s;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h1 {
+  text-align: center;
+  font-size: 7rem;
+  color: aliceblue;
+}
+
+hr {
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  display: block;
+  border-top: 4px solid #fecb00;
+  border-radius: 5px;
+  max-width: 850px;
+}
+
+p, h2 {
+  text-align: center;
+  color: white;
+}
+
+.section {
+  display: grid;
+  text-align: justify;
+  align-items: center;
+  max-width: 1300px;
+  width:100%;
+  margin: 0rem auto;
+  margin-bottom: 3rem;
+  grid-template-columns: repeat(2, fr);
+  grid-template-areas: 
+  "col1 col2"; 
+}
+
+main img {
+  width: 500px;
+}
+
+main p {
+  flex-direction: column;
+  font-size: 18px;
+  text-align: justify;
+  align-items: center;
+  color: white;
+  margin-right: 7rem;
+}
+
+main .explanation {
+  text-align: justify;
+  align-items: bottom;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0.3;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(-100);
+  opacity: 1;
+}
+
+.back {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
+
+.button {
+  font-size: 16px;
+  width: 200px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 16px 32px;
+  margin: 0px 30px 30px 0px;
+  cursor: pointer;
+}
+
+main h3{
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer {
+  align-items: center;
+  background-color: #fecb00;
+  opacity: 0.5;
+  padding: 10px;
+  padding-left: 5%;
+  margin:  auto;
+  box-sizing: border-box;
+}
